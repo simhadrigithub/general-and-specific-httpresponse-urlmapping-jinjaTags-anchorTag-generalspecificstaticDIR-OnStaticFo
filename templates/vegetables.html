@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/c2.css' %}">
+</head>
+<body>
+    <marquee>
+        <h1>
+            all types of vegetables
+        </h1>
+    </marquee>
+    {% for v in vegetables %}
+    <h1>{{v}}</h1>
+    {% endfor %}
+    <h1><a href="{%  url 'app1:fruits'  %}">click here to navigate from specific url mapping to general url mapping</a></h1>
+
+    <img src="{%  static 'images/sapota.jpg'  %}" alt="">
+</body>
+</html>

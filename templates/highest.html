@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>highest value</h1>
+    {% if a > b %}
+       {% if a > c %}
+          print("a is highest" ={{a}})
+        {% else %}
+          print("c is highest"={{c}})
+        {% endif %}
+    {% else %}
+       {% if b > c %}
+            print("b is highest"={{b}})
+        {% else %}
+            print("c is highest"={{c}})
+        {% endif %}
+    {% endif %}
+
+</body>
+</html>
